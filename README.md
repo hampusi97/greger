@@ -1,37 +1,41 @@
-# greger — VelvetMotion (demo)
+# greger — VelvetMotion
 
-A seductive AI companion website inspired by Candy.ai-style premium platforms. Single-file HTML, fully client-side.
+Candy.ai-style AI companion demo. Single-file HTML, client-side.
 
 ## Features
 
 - Age gate (18+)
-- 12 built-in companions + create your own
-- Personality-driven chat replies (free & unlimited)
-- Coins system (image generation costs 10 coins)
-- Tinder-style swipe roleplay
-- Private gallery of generated media
-- Username + state saved in `localStorage`
-- Fully responsive dark / premium UI
+- 12 companions + create your own (with look description)
+- Personality + mood system (soft, commanding, shy, etc.)
+- Free unlimited chat with NSFW-aware replies
+- **Media generation panel**: portrait, lingerie, nude, explicit, video concepts
+- Prompt builder (girl look + pose + extras)
+- Coins economy (generation costs 8–25 coins)
+- Gallery with image/video filters
+- Discover / swipe matching
+- Settings: demo placeholders, Pollinations free API, or your own SD endpoint
+- localStorage persistence
 
-## Tech
+## Image generation
 
-- Single-file HTML
-- Tailwind CSS (CDN)
-- Font Awesome
-- No backend required for the demo
+| Mode | Notes |
+|------|--------|
+| **Demo** | Stylized placeholders (default) |
+| **Pollinations** | Free public image API — set in Settings. NSFW may be filtered by their service. |
+| **Custom API** | Point at your Stable Diffusion / RunPod / ComfyUI endpoint |
+
+Video is currently a **concept card** (no real video model wired). Plug a video API the same way if you have one.
 
 ## Local use
 
-Open `index.html` in any modern browser.
+Open `index.html` in a browser.
 
-## Deploy (Vercel / Netlify / GitHub Pages)
+## Deploy
 
-1. Push this repo
-2. Import on Vercel (or Netlify / GitHub Pages)
-3. Deploy — root is static, no build step
+Static site — Vercel, Netlify, or GitHub Pages. No build step.
 
 ## Notes
 
-This is a **frontend demo**. Chat replies are simulated locally. Real LLM / image generation would require API keys and a backend (see your other VelvetMotion repos).
+Chat is simulated (no LLM key required). For real conversation quality, wire an OpenAI-compatible API in a future backend version (see your other VelvetMotion repos).
 
-Fantasy only. For entertainment purposes.
+Adult fantasy. Entertainment only.
