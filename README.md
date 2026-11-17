@@ -1,41 +1,32 @@
-# greger — VelvetMotion
+# greger — VelvetMotion (static demo)
 
-Candy.ai-style AI companion demo. Single-file HTML, client-side.
+Lightweight Candy.ai-style companion demo (single `index.html`).
 
-## Features
+## What works here
 
-- Age gate (18+)
-- 12 companions + create your own (with look description)
-- Personality + mood system (soft, commanding, shy, etc.)
-- Free unlimited chat with NSFW-aware replies
-- **Media generation panel**: portrait, lingerie, nude, explicit, video concepts
-- Prompt builder (girl look + pose + extras)
-- Coins economy (generation costs 8–25 coins)
-- Gallery with image/video filters
-- Discover / swipe matching
-- Settings: demo placeholders, Pollinations free API, or your own SD endpoint
-- localStorage persistence
+- Age gate, companions, create, discover/swipe, chat, moods
+- **Media generation panel**: portrait / lingerie / nude / explicit / video concepts
+- Prompt builder + coins
+- Gallery
+- Settings: demo placeholders, **Pollinations** free images, or your own SD API URL
 
-## Image generation
+## Relation to your other repos
 
-| Mode | Notes |
-|------|--------|
-| **Demo** | Stylized placeholders (default) |
-| **Pollinations** | Free public image API — set in Settings. NSFW may be filtered by their service. |
-| **Custom API** | Point at your Stable Diffusion / RunPod / ComfyUI endpoint |
+| Repo | Role |
+|------|------|
+| **greger** (this) | Fast static UI demo. No server required. |
+| **velvetmotion-ai** | Best **character writing** (Maren, Liora, Tess, Isolde…), roster, JOI/story packs UI. Chat API is currently a stub (local fallback only). |
+| **velvetmotionai** | Intended **full stack**: `/api/chat`, `/api/generate-video`, Supabase, BTC VIP. Wire real OpenAI/Ollama/RunPod keys there. |
 
-Video is currently a **concept card** (no real video model wired). Plug a video API the same way if you have one.
+For production (real LLM chat + real nudes/video), develop on **velvetmotionai** or finish the `/api/chat` route in **velvetmotion-ai** with `OPENAI_API_KEY` / OpenRouter.
 
-## Local use
+## Deploy greger
 
-Open `index.html` in a browser.
+Static — open `index.html` or deploy the repo to Vercel/Netlify/GitHub Pages (no build).
 
-## Deploy
+## Image gen
 
-Static site — Vercel, Netlify, or GitHub Pages. No build step.
-
-## Notes
-
-Chat is simulated (no LLM key required). For real conversation quality, wire an OpenAI-compatible API in a future backend version (see your other VelvetMotion repos).
+1. Settings → Pollinations (free) or Custom API
+2. Chat → Generate → Nude / Explicit
 
 Adult fantasy. Entertainment only.
