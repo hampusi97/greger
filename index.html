@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>VelvetMotion • AI Companions</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  body { font-family: 'Inter', system_ui, sans-serif; }
+  .glass { background: rgba(255,255,255,0.025); backdrop-filter: blur(24px); }
+  .gradient-btn { background: linear-gradient(90deg, #ff2d95, #c026d3); box-shadow: 0 0 30px rgba(255,45,149,0.5); }
+  .sexy-card { transition: all 0.4s cubic-bezier(0.4,0,0.2,1); }
+  .sexy-card:hover { transform: translateY(-12px) scale(1.025); box-shadow: 0 35px 70px -15px rgb(0 0 0 / 0.6); }
+  .message-user { background: linear-gradient(90deg, #ff2d95, #c026d3); }
+  .message-assistant { background: #111014; border: 1px solid rgba(255,255,255,0.08); }
+  .mesh { background: radial-gradient(circle at 20% 20%, rgba(192,38,211,0.12) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(255,45,149,0.1) 0%, transparent 60%), #07050c; }
+</style>
+</head>
+<body class="bg-[#07050c] text-white mesh">
+
+<!-- AGE GATE -->
+<div id="gate" class="fixed inset-0 bg-[#07050c] z-[999] flex items-center justify-center">
+  <div class="max-w-md text-center px-8">
+    <div class="text-[90px] mb-6">💋</div>
+    <h1 class="text-7xl font-extrabold tracking-[-3.5px]">VelvetMotion</h1>
+    <p class="text-2xl text-zinc-400 mt-2 mb-10">Pure fantasy. Dangerously addictive.</p>
+    <button onclick="enterApp()" class="gradient-btn w-full py-5 rounded-3xl text-xl font-semibold">I am 18+ — Enter</button>
+  </div>
+</div>
+
+<div id="app" class="hidden">
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 glass border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex justify-between items-center">
+      <div class="flex items-center gap-x-3">
+        <span class="text-4xl">💋</span>
+        <span class="font-extrabold text-4xl tracking-[-2px]">VelvetMotion</span>
+      </div>
+      <div class="flex items-center gap-x-5 text-sm">
+        <div class="px-5 py-1.5 rounded-2xl bg-zinc-950/80 border border-white/10 flex items-center gap-x-2 cursor-pointer" onclick="editUsername()">
+          <i class="fa-solid fa-user"></i> <span id="username">Guest</span>
+        </div>
+        <div class="px-5 py-1.5 rounded-2xl bg-zinc-950/80 border border-white/10 flex items-center gap-x-2">
+          <i class="fa-solid fa-coins text-amber-400"></i> <span id="coins">124</span>
+        </div>
+      </div>
+    </div>
+    <div class="text-center text-[10px] tracking-[2px] py-1 border-b border-white/10 text-zinc-500">
+      FREE UNLIMITED MESSAGES • ONLY GENERATION COSTS COINS
+    </div>
+  </header>
+
+  <div class="max-w-7xl mx-auto px-6 pt-10 pb-24">
+    <div id="home" class="section">
+      <div class="max-w-2xl mb-10">
+        <h2 class="text-6xl font-extrabold tracking-tighter">Good evening.</h2>
+        <p class="text-2xl text-zinc-400 mt-2">Meet your new obsession.</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+        <div onclick="showView('girls')" class="glass p-8 rounded-3xl cursor-pointer sexy-card border border-white/10">
+          <div class="text-4xl mb-6 text-pink-400"><i class="fa-solid fa-users"></i></div>
+          <div class="text-2xl font-semibold">All Companions</div>
+          <div class="text-zinc-400">180+ girls</div>
+        </div>
+        <div onclick="showView('create')" class="glass p-8 rounded-3xl cursor-pointer sexy-card border border-white/10">
+          <div class="text-4xl mb-6 text-pink-400"><i class="fa-solid fa-camera"></i></div>
+          <div class="text-2xl font-semibold">Create from Photo</div>
+        </div>
+        <div onclick="showView('tinder')" class="glass p-8 rounded-3xl cursor-pointer sexy-card border border-white/10">
+          <div class="text-4xl mb-6 text-pink-400"><i class="fa-solid fa-heart"></i></div>
+          <div class="text-2xl font-semibold">Tinder Roleplay</div>
+        </div>
+        <div onclick="showView('gallery')" class="glass p-8 rounded-3xl cursor-pointer sexy-card border border-white/10">
+          <div class="text-4xl mb-6 text-pink-400"><i class="fa-solid fa-images"></i></div>
+          <div class="text-2xl font-semibold">Your Gallery</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Other sections (girls, create, chat, etc.) go here -->
+    <!-- Paste the full code from the previous message here if needed -->
+  </div>
+</div>
+
+<script>
+  // Paste the full JavaScript from the previous version here
+</script>
+</body>
+</html>
